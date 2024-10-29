@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Placement</title>
+    <style>
+    div {text-align: center;}
+    </style>
+</head>
+<body bgcolor="turquoise">
+<div>
+    <form action="/predict_placement" method="post">
+        <h1>Student Placement Predictor</h1>
+    <h2 style="color:green"> Enter your CGPA in the scale of 1.0 to 10. </h2>
+    <label>CGPA :</label><br>
+    <input type="text" name="cgpa"> <br><br>
+    {%if message%}
+    <p style="color:red">{{message}}</p>
+    {%endif%}
+    <br><br>
+    <input type="Submit" value="Predict Placement">
+    </form>
+
+
+</div>
+</body>
+</html>
